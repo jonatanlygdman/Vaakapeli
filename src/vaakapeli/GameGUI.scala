@@ -180,7 +180,7 @@ object GameGUI extends SimpleSwingApplication {
       }
         
     //Create a new scale on the game board every time it's the first player's turn, except on the first turn.
-         if(game.getTurn() == game.players(0) && game.turnIndex > 0) {
+         if(game.turnIndex % 5 == 0 && game.turnIndex > 0) {
          
          var scaleIsSet = false
          var stopEndlessLoop = 0
